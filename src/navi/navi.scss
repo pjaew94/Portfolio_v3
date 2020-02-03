@@ -1,0 +1,118 @@
+.navi-container {
+  height: 7vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  background: rgba(0,0,0,0);
+  z-index: 2;
+
+
+  .navi-container-2 {
+    height: 100%;
+    width: 50%;
+    display: flex;
+
+      .logo {
+        height: 100%;
+        width: 25%;
+        font-family: 'Playfair Display', serif;
+        font-weight: 700;
+        font-size: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          font-family: 'Lato', sans-serif;
+          margin-left: 3%;
+          font-size: 1.4rem;
+          font-weight: 300;
+        }
+      }
+
+
+
+    .navi-spacer {
+      width: 35%;
+    }
+
+    .navi-links {
+      height: 100%;
+      width: 40%;
+      display: flex;
+
+      .link-container {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .link {
+          width: 80%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-family: 'Lato', sans-serif;
+          font-size: 1rem;
+          font-weight: 700;
+          padding-bottom: 10px;
+          cursor: pointer;
+        }
+       .active {
+          border-bottom: 1px solid black;
+        }
+      }
+    }
+  }
+}
+
+
+
+// Media Queries: iPad Pro Landscape
+@media screen and (max-width: 1400px){
+  .navi-container {
+    width: 100%;
+
+    .navi-container-2 {
+      width: 60%;
+    }
+  }
+}
+
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+  .navi-container {
+    width: 100%;
+
+    .navi-container-2 {
+      width: 90%;
+    }
+  }
+}
+
+
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+  .navi-container {
+    width: 100%;
+
+    .navi-container-2 {
+      width: 90%;
+
+      .logo {
+        width: 40%;
+      }
+
+      .navi-spacer {
+        width: 10%;
+      }
+    }
+  }
+}
+
+
+
+

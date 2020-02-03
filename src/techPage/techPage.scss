@@ -1,0 +1,59 @@
+.tech-page-container {
+  height: 40vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 100px;
+
+  .tech-page-container-2 {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .tech-text {
+      height: 100%;
+      width: 50%;
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      font-size: 3.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+
+    .tech-logo-container {
+      height: 250px;
+      width: 600px;
+
+      display: flex;
+      flex-direction: column;
+
+      .tech-logo-container-top,
+      .tech-logo-container-bottom {
+        height: 50%;
+        width: 100%;
+        display: flex;
+        transform: translateY(50px);
+        opacity: 0;
+
+        .logo {
+          width: 25%;
+          height: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            height: auto;
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+}

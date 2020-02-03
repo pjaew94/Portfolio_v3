@@ -1,0 +1,157 @@
+.landing-page-container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+ 
+
+  .landing-page-container-2 {
+    height: 80%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .landing-svg {
+      height: auto;
+      width: 90%;
+
+    }
+
+    .hello-text {
+      height: auto;
+      width: 100%;
+      font-family: 'Playfair Display', serif;
+      font-size: 3.5rem;
+      font-weight: 800;
+      margin-bottom: 2%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .rose-text {
+      width: 100%;
+      font-family: 'Lato', sans-serif;
+      font-size: 1.4rem;
+      font-weight: 300;
+      text-align: center;
+    }
+
+  }
+
+  .landing-page-spacer {
+    height: 5%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .arrow-container {
+      height: 150px;
+      width: 50px;
+      position: relative;
+      transform: translateY(30px);
+      cursor: pointer;
+
+      .arrow-1 {
+        height: 65px;
+        width: 1px;
+        background: black;
+        left: 50%;
+        position: absolute;
+      }
+      .arrow-2{
+        width: 15px;
+        height: 1px;
+        background: black;
+        position: absolute;
+        top: 60px;
+        left: 25%;
+        transform: rotate(45deg);
+      }
+
+      .arrow-3{
+        width: 15px;
+        height: 1px;
+        background: black;
+        position: absolute;
+        top: 60px;
+        right: 25%;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+}
+
+/* Media Queries: iPad Pro Landscape */
+@media screen and (max-width: 1400px) {
+  .landing-page-container {
+    .landing-page-container-2 {
+      width: 50%;
+    }
+    .landing-page-spacer {
+      height: 10%;
+    }
+  }
+}
+
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+  .landing-page-container {
+    .landing-page-container-2 {
+      height: 100%;
+      width: 70%;
+      transform: translateY(100px);
+
+      .landing-svg {
+        margin-bottom: 10%;
+      }
+
+      .hello-text {
+        margin-bottom: 5%;
+      }
+      .rose-text {
+        width: 50%;
+      }
+    }
+  }
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+  .landing-page-container {
+    .landing-page-container-2 {
+      height: 70%;
+      width: 70%;
+
+      .landing-svg {
+        height: auto;
+        width: 80%;
+      }
+
+      .rose-text {
+        width: 100%;
+      }
+    }
+    .landing-page-spacer {
+      height: 25%;
+
+      .arrow-container {
+        transform: translateY(50px);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .landing-page-container {
+    .landing-page-container-2 {
+      width: 100%;
+    }
+  }
+}
