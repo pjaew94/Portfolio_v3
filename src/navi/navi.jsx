@@ -4,6 +4,8 @@ import { Link } from 'react-scroll'
 import './navi.scss'
 import { useScrollPosition } from '@n8tb1t/use-scroll-position'
 
+import HamburgerLogo from '../hamburger/hamburgerLogo/hamburgerLogo'
+
 function Navi() {
 
   useEffect(()=> {
@@ -26,7 +28,7 @@ function Navi() {
 
         <div className="navi-links">
 
-        <div className="link-container">
+        <div className="navi-link-container">
           <Link
             className='link'
             activeClass="active"
@@ -37,7 +39,7 @@ function Navi() {
             Home
           </Link>
           </div>
-          <div className="link-container">
+          <div className="navi-link-container">
           <Link
             className='link'
             activeClass="active"
@@ -48,7 +50,7 @@ function Navi() {
             Projects
           </Link>
           </div>
-          <div className="link-container">
+          <div className="navi-link-container">
           <Link
             className='link'
             activeClass="active"
@@ -59,7 +61,7 @@ function Navi() {
             About
           </Link>
           </div>
-          <div className="link-container">
+          <div className="navi-link-container">
           <Link
             className='link'
             activeClass="active"
@@ -71,6 +73,9 @@ function Navi() {
           </Link>
           </div>
         </div>
+      </div>
+      <div className="hamburger-logo-wrapper">
+      <HamburgerLogo />
       </div>
     </div>
   )

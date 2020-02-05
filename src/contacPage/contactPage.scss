@@ -76,6 +76,27 @@
       opacity: 0;
     }
   }
-
-  
 }
+
+
+/* Media Queries: iPad Pro Landscape */
+@media screen and (max-width: 1400px) and (min-width: 1060px) {
+}
+
+@media screen and (max-width: 1060px) and (min-width: 769px) {
+  .contact-page-container {
+    .contact-page-container-2 {
+      width: 70%;
+    }
+  }
+}
+
+/* Media Queries: Tablet Portrait */
+@media screen and (max-width: 768px) and (min-width: 430px) {
+ .contact-page-container {
+   .contact-page-container-2 {
+     width: 90%;
+   }
+ }
+}
+

@@ -1,0 +1,52 @@
+.hamburger-menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 5;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffe3e3;
+
+  .hamburger-link-container {
+    height: 100%;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+
+    .hamburger-link-container-2 {
+      height: 40%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      transform: translateY(-100px);
+
+
+      .link-container {
+        height: 100px;
+        width: auto;
+
+        .link {
+          font-family: "Playfair-Display";
+          font-size: 3rem;
+          font-weight: 900;
+          cursor: pointer;
+        }
+      }
+    }
+    .hamburger-menu-svg {
+      position: absolute;
+      bottom: 0;
+      width: 300px;
+      height: auto;
+    }
+  }
+}

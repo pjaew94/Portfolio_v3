@@ -68,7 +68,7 @@ function ContactPage() {
       <div className="contact-page-container-2" ref={contact}>
 
         <div className="contact-container">
-          <div className="so-text">What are you waiting for?</div>
+          <div className="so-text">Want to chat?</div>
           <div className="contact-text">Let's get in touch!</div>
           <a
             href='tel:1-267-640-6798'

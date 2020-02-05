@@ -1,11 +1,12 @@
 .navi-container {
-  height: 7vh;
+  height: 10vh;
   width: 100%;
   display: flex;
   justify-content: center;
   position: fixed;
   background: rgba(0,0,0,0);
-  z-index: 2;
+  overflow: hidden;
+  z-index: 4;
 
 
   .navi-container-2 {
@@ -42,7 +43,7 @@
       width: 40%;
       display: flex;
 
-      .link-container {
+      .navi-link-container {
         width: 25%;
         height: 100%;
         display: flex;
@@ -71,7 +72,7 @@
 
 
 // Media Queries: iPad Pro Landscape
-@media screen and (max-width: 1400px){
+@media screen and (max-width: 1400px) and (min-width: 1060px) {
   .navi-container {
     width: 100%;
 
@@ -79,10 +80,13 @@
       width: 60%;
     }
   }
+  .hamburger-logo-wrapper {
+    display: none;
+  }
 }
 
 /* Media Queries: Tablet Landscape */
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1060px) and (min-width: 768px) {
   .navi-container {
     width: 100%;
 
@@ -90,12 +94,15 @@
       width: 90%;
     }
   }
+  .hamburger-logo-wrapper {
+    display: none;
+  }
 }
 
 
 
 /* Media Queries: Tabled Portrait */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) and (min-width: 430px) {
   .navi-container {
     width: 100%;
 
@@ -111,6 +118,22 @@
       }
     }
   }
+  .hamburger-logo-wrapper {
+    display: none;
+  }
+}
+
+// Iphone
+@media screen and (max-width: 430px) {
+  .navi-container {
+    width: 100%;
+    position: relative;
+
+    .navi-container-2 {
+      display: none;
+    }
+  }
+
 }
 
 
