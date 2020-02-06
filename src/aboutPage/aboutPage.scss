@@ -142,13 +142,14 @@
 }
 
 /* Media Queries: iPhone X and lower*/
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 4300px) {
   .about-page-container {
-    height: 170vh;
+    height: 190vh;
     .about-page-container-2 {
       width: 90%;
-      height: 170vh;
+      height: 190vh;
       flex-direction: column;
+      transform: translateY(50px);
 
       .about-left-container,
       .about-right-container {
@@ -156,6 +157,10 @@
       }
       .about-left-container {
         height: 30%;
+
+        .about-svg {
+          width: 90%;
+        }
       }
       .about-right-container {
         height: 70%;
