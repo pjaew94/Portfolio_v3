@@ -188,6 +188,7 @@
 @media screen and (max-width: 430px) {
   .landing-page-container {
     height: 100vh;
+    z-index: 4;
     .landing-page-container-2 {
       width: 90%;
       height: 80%;
@@ -199,7 +200,7 @@
 
       .hello-text {
         margin-top: 50px;
-        font-size: 2.5rem;
+        font-size: 2.4rem;
       }
 
       .rose-text {
