@@ -67,6 +67,10 @@
       }
     }
   }
+
+  .hamburger-logo-wrapper {
+    display: none;
+  }
 }
 
 
@@ -131,6 +135,11 @@
 
     .navi-container-2 {
       display: none;
+    }
+
+    .hamburger-logo-wrapper {
+      display: block;
+      z-index: 10;
     }
   }
 
