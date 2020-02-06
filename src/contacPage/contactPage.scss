@@ -100,3 +100,27 @@
  }
 }
 
+/* Media Queries: iPhone X and lower*/
+@media screen and (max-width: 430px) {
+  .contact-page-container {
+    .contact-page-container-2 {
+      width: 90%;
+      flex-direction: column-reverse;
+      transform: translateX(0);
+
+      .contact-container {
+        height: 50%;
+        width: 100%;
+
+        .contact-text {
+          font-size: 3.5rem;
+        }
+      }
+
+      img {
+        width: 90%;
+
+      }
+    }
+  }
+}
