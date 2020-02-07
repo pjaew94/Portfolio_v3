@@ -42,8 +42,8 @@ function ProjectPage() {
     <div name='projects' className='project-page-container'>
       <div className="project-page-container-2" ref={project}>
         <div className="projects-container">
-          <a onMouseEnter={projectHover1} onMouseLeave={projectUnhover1} class='p1 project-link' href='/'>Project One</a>
-          <a onMouseEnter={projectHover2} onMouseLeave={projectUnhover2} class='p2 project-link' href='/'>Project Two</a>
+          <a onMouseEnter={projectHover1} onMouseLeave={projectUnhover1} class='p1 project-link' href='https://jae-park.netlify.com/'>Project One</a>
+          <a onMouseEnter={projectHover2} onMouseLeave={projectUnhover2} class='p2 project-link' href='https://ridnyi-house-project.netlify.com'>Project Two</a>
         </div>
         <img className='shop-svg' src={shopSvg} alt=''></img>
       </div>
